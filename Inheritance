@@ -1,0 +1,21 @@
+#instance are objects in classes
+#methods are functions in classes
+#dog1=Dog('sara') instance=class(name)
+
+import random
+
+class Animal:
+    info= 'a living organism such as humans and lions'
+
+class Dog (Animal):
+    #info = 'a cute furry animal'
+
+    def __init__(self, name):
+        print('i\'m extremely Happy!')
+        self.lucky_number = random.randint(1,20)
+        self.name = name
+        
+
+
+dog1 = Dog('Harry')
+
