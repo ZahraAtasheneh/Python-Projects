@@ -1,0 +1,17 @@
+class Puppy:
+    info = 'A gorgeous cute furry animal'
+
+
+print(Puppy.info)
+
+class Heater:
+    info= 'heats room'
+
+print(Heater.info)
+
+class Rectangle:
+    sides = 4
+    angles= 4
+print(Rectangle.sides)
+print(Rectangle.angles)
+
