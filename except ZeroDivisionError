@@ -1,0 +1,16 @@
+print('before')
+
+try:
+    print(nnn)
+    4 / 0
+except Exception:
+    print('wrong')
+    
+except ZeroDivisionError as e:
+    print('zero error')
+    print(e)
+except NameError as e:
+    print('name error')
+    print(e)
+
+print('after')
