@@ -1,0 +1,53 @@
+https://openweathermap.org/
+
+https://home.openweathermap.org/api_keys
+
+https://api.openweathermap.org/data/2.5/weather?lat=51.4490&lon=0.2846&appid=***
+
+{"coord":{"lon":0.2846,"lat":51.449},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":279.42,"feels_like":276.01,"temp_min":278.24,"temp_max":280.41,"pressure":1030,"humidity":78},"visibility":10000,"wind":{"speed":5.14,"deg":50},"clouds":{"all":75},"dt":1677667746,"sys":{"type":2,"id":2080252,"country":"GB","sunrise":1677653106,"sunset":1677692269},"timezone":0,"id":2647962,"name":"Greenhithe","cod":200}
+
+
+https://jsonlint.com/
+
+{
+	"coord": {
+		"lon": 0.2846,
+		"lat": 51.449
+	},
+	"weather": [{
+		"id": 803,
+		"main": "Clouds",
+		"description": "broken clouds",
+		"icon": "04d"
+	}],
+	"base": "stations",
+	"main": {
+		"temp": 279.42,
+		"feels_like": 276.01,
+		"temp_min": 278.24,
+		"temp_max": 280.41,
+		"pressure": 1030,
+		"humidity": 78
+	},
+	"visibility": 10000,
+	"wind": {
+		"speed": 5.14,
+		"deg": 50
+	},
+	"clouds": {
+		"all": 75
+	},
+	"dt": 1677667746,
+	"sys": {
+		"type": 2,
+		"id": 2080252,
+		"country": "GB",
+		"sunrise": 1677653106,
+		"sunset": 1677692269
+	},
+	"timezone": 0,
+	"id": 2647962,
+	"name": "Greenhithe",
+	"cod": 200
+}
+
