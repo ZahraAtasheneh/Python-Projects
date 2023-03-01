@@ -1,0 +1,13 @@
+import requests
+
+try:
+    response = requests.get("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=51.4490&lon=0.2846&appid=b54c11dff86f3046ee93c99f6a94fdec")
+
+except:
+    print("Shit. No internet!")
+    
+    
+response_json = response.json()
+
+print(response_json["main"]["temp"])
+
