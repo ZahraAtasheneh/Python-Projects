@@ -1,0 +1,51 @@
+import requests
+
+try:
+    response = requests.get("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=51.4490&lon=0.2846&appid=b54c11dff86f3046ee93c99f6a94fdec")
+
+except:
+    print("Shit. No internet!")
+    
+    
+response_json = response.json()
+
+temp = response_json["main"]["temp"]
+temp_min = response_json["main"]["temp_min"] 
+temp_max = response_json["main"]["temp_max"] 
+
+print(f"It's {temp}°C here, highest {temp_max}°C, lowest {temp_min}°C")
+
+class City:
+    def __init__(self, name, lat, lon, units="metric"):
+        self.name= name
+        self.lat=lat
+        self.lon=lon
+        self.units=units
+        self.get_data()
+
+    def get_data(self):
+        try:
+            response = requests.get("https://api.openweathermap.org/data/2.5/weather?units={self.units}&lat={self.lat}&lon={self.lon}&appid=b54c11dff86f3046ee93c99f6a94fdec")
+
+        except:
+            print("Shit. No internet!")
+      
+        self.response_json = response.json()
+
+        self.temp = response_json["main"]["temp"]
+        self.temp_min = response_json["main"]["temp_min"] 
+        self.temp_max = response_json["main"]["temp_max"] 
+
+    def temp_print(self):
+        units_symbol = "C"
+        if self.units == "imperial":
+            units_symbol="F"
+        print(f"In {City} it's {self.temp} {units_symbol}.")
+        print(f"the highest was{self.temp_max} {units_symbol}")
+        print(f"lowest was {self.temp_min} {units_symbol}.")
+
+my_city = City ("Greenhithe", 51.4490, 0.2846)
+my_city.temp_print()
+
+vacation_city = City("Portland", 45.5152, -122.6784, units="imperial")
+vacation_city.temp_print()
