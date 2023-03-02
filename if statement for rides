@@ -1,0 +1,36 @@
+age = 19
+height = 140
+weight= 80
+
+#and
+if age >= 8 and height >= 135:
+    print("you can ride the ride")
+
+#or
+if age >= 17 or height >= 160:
+    print("Super ride")
+
+
+#elif , else if
+if height < 120:
+    print('no ride')
+
+elif height <135:
+    print("the smaller one")
+
+elif height <200:
+    print("feel free")
+
+else:
+    print("Too tall, go home")
+
+if weight <75:
+    print("welcome")
+elif weight <90:
+    print("ride alone")
+
+else:
+    print("sorry, lose weight first")
+
+if age % 2 == 0 and age >100 or age ==0:
+    print("you have an intersting age")
