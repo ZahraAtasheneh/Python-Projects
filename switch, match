@@ -1,0 +1,31 @@
+direction = input("which direction?").lower()
+
+match direction:
+    case "north":
+        print("Up")
+        
+    case "south":
+        print("Down")
+        
+    case "east":
+        print("Right")
+        
+    case "west":
+        print("'Left")
+        
+    case _:
+        print("Not a valid direction!")
+        
+        
+certain_number = input("Choose a number between 1-3: ")
+
+match certain_number:
+    case 1:
+        print("Not the right one")
+    case 2:
+        print("Not the right one")
+    case 3:
+        print("Yayy.. that's the right one!")
+        
+    case _:
+        print("Not even in the range!!")
