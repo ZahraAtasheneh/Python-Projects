@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+students = [Student("Joe", 0.46), Student("Amy", 0.72), Student("Mark", 0.88), Student("Zach", 0.90)]
+
+student_results = []
+for Student in students:
+    if Student.score >= 0.7:
+        student_results.append(f"{Student.name} Passed")
+    else:
+        student_results.append(f"{Student.name} Failed")
+
+print(student_results)    
+
+
