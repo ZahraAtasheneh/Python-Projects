@@ -1,0 +1,8 @@
+list=[3,2,4,5,2,1]
+list.sort(reverse=True)
+print(list)
+list = [12,24,35,3,56,20]
+list.sort()
+print(list[0])
+list = [12,24,35,3,56,20]
+print(min(list))
